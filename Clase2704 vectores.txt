@@ -1,0 +1,9 @@
+B(1:2)
+MUESTRA SOLO LAS DOS PRIMERAS ENTRADAS DEL VECTOR 
+
+A.^2 eleva cada uno de los componentes al cuadrado, quedando otro vector 
+
+
+p(1,1) muestra la entrada 11 de una matriz p 
+
+concatenacion de matrices
