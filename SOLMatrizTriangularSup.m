@@ -1,22 +1,19 @@
-%toma un sistema con una matriz triangular superior y lo resuelve.
+%toma un sistema con una matriz cuadrada triangular superior y lo resuelve.
 
-%hacer una que tome datos de excell o externos para la matriz A y el vector
-%b y revise si es diagonal superior y calcule la solución. 
+A=[1 2 3 4 5 6; 0 4 6 7 5 6; 0 0 7 4 5 6; 0 0 0 3 3 5; 0 0 0 0 5 2; 0 0 0 0 0 6];
 
-n=input('Número de filas de la matriz: ');
-m=input('Número de columnas de la matriz: ');
+b=[3 7 4 5 8 5]';
 
-A=zeros(n,m);
+n=length(A);%numero de filas de A.
 
-for i=1:n
-    for j=1:m
-        A(i,j)=input('Digite la entrada ');
-    end
+x=b(n)/A(n,n);
+
+for i=n-1:-1:1
+    vi=A(i,i+1:n);
+    xi=(b(i)-sum(vi.*x))/A(i,i);
+    x=[xi, x];
 end
 
-b=zeros(m,1);
-for j=1:m
-    b(j)=input('Digite el siguiente valor del vector: ');
-end
+x=x';
 
-
+y=A\b;

@@ -129,10 +129,10 @@ z2=3:1:6;
 [Y2,Z2]=meshgrid(y2,z2);
 X2=0*Y2;%simplemente zeros del tamaño de y.
 
-
 surf(X2,Y2,Z2);
 
 hold on;
+
 % 3
 u3=0:0.1:3;
 v3=linspace(0,pi/2,10);
@@ -145,7 +145,6 @@ X3=0*Y3;
 
 surf(X3,Y3,Z3);
 
-hold on;
 % 4
 u4=linspace(0,pi/2,10);
 z4=0:0.5:3;
@@ -155,7 +154,6 @@ Y4=Z4.*sin(U4);
 
 surf(X4,Y4,Z4);
 
-hold on;
 
 % 5
 
@@ -170,7 +168,6 @@ z5=3:0.1:6;
 
 surf(X5,Y5,Z5);
 
-hold on;
 % 6
 [u6,v6]=meshgrid(linspace(0,pi/2,10));
 
@@ -180,7 +177,6 @@ z6=3*sin(v6)+6;
 
 surf(x6,y6,z6);
 
-hold on;
 
 % 8
 x8=0:0.1:3;
@@ -190,7 +186,6 @@ Y8=0*X8;
 
 surf(X8,Y8,Z8);
 
-hold on;
 
 % 9
 u9=0:0.1:3;
@@ -203,13 +198,3 @@ Z9=U9.*sin(V9)+6;
 Y9=0*X9;
 
 surf(X9,Y9,Z9);
-
-
-
-
-
-
-
-
-
-

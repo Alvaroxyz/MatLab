@@ -1,6 +1,5 @@
 function v=OrdenRapido0(v)
 %ordena un vector aplicando 'divide y vencerás'
-%creada por Álvaro Riaño
 
 n=length(v);
 l=[];
